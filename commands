@@ -1,0 +1,46 @@
+#Create Project 
+composer create-project laravel/laravel my-first-project --prefer-dist
+
+#Add Auth
+php artisan make:auth
+
+php artisan migrate
+
+#Environmet => .enc 
+
+#Server down/up => php artisan down/up
+
+#Routes => routes\web.php
+
+#View => resources\views\eg.blade.php
+
+#Middleware(controller) => app\http\Middleware
+php artisan make:middleware AgeEgg
+
+#Register Middleware => app\http\Kernel.php
+
+#Controller => app\http\Controllers\
+
+php artisan make:controller TestController
+
+
+
+#Model =>app\http\Provider
+
+php artisan make:model Car --migration
+
+#older mysql=> app\Providers\AppServiceProvider
+use Illuminate\Support\Facades\Schema;
+ @boot->  Schema::defaultStringLength(191); 
+
+ #update schema=> php artisan migrate:refresh
+
+
+
+
+
+
+
+
+
+
